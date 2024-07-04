@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient( navy, rgb(29, 3, 83) );
+    background-size: 100%;
+    color: white;
+    font-family: 'Kaushan Script';
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px 0px 130px;
+    margin: auto;
+
+}
+h3{
+    padding: 20px 0px ;
+    font-weight: 500;
+    font-size: 35px;
+}
+span{
+    font-family: "Nothing You Could Do";
+    color: rgb(252, 0, 0);
+    font-size: 45px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+ul li:hover{
+    background-color:black;
+    color:rgb(245, 0, 0);
+    transform:scale(1.1);
+    border-radius:20%;
+    
+}
+li{
+   flex-shrink: 0;
+    padding: 20px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    transition:0.3s ease;
+}
+button{
+    background-color: rgb(245, 0, 0);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+     font-family: 'Kaushan Script';
+ a    transition:0.3s ease;
+}
+main{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 5%;
+    gap: 40px;
+    width: 100%;
+    margin: auto;
+}
+.maincontent{
+    padding: 20px 30px 10px 50px;
+    flex: 1 1 450px ;
+
+}
+p{
+    padding:0px;
+}
+.bigcontent{
+    font-size: 55px;
+    font-weight: 600;
+}
+.smallcontent{
+    line-height: 50px;
+    font-size: 20px;
+}
+.mainbutton{
+    padding: 20px 60px;
+    margin: 30px 0px;
+    background-color: rgb(255, 0, 0);
+    transition:0.3s ease;
+}
+button:hover,button:focus{
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.mainimage{
+    padding: 0px 50px 0px 20px;
+    flex: 2 1 550px; 
+    color: transparent;
+    
+}
+.image1{
+    width: 100%;
+    background-color: transparent;
+}
+footer{
+    display: flex;
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    gap: 3%;
+    padding: 10px 15% 40px 15% ;
+}
+.footerflex{
+    flex: 1 0 130px;
+    padding-top: 20px;
+}
+.gpimg{
+    width: 80px;
+    height: 80px;
+    padding: 5px 0px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+.fbimg{
+    width: 60px;
+    height: 60px;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+.fouierimg{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: solid 2px white;
+}
+.bigfont{
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+@media screen and (max-width: 1100px) {
+    nav{
+        
+        padding: 30px 20px 30px 20px;
+    }
+    ul,nav{
+        flex-direction: column;
+        align-items: start;
+        justify-content: left;
+        padding-left: 0 ;
+        flex-grow: 1;
+        width: 80%;
+    }
+    li{
+        padding-left: 0px;
+    }
+    footer{
+       margin: 20px auto;
+    }
+    
+}
